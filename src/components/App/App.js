@@ -52,14 +52,14 @@ const App = () => {
       </button>
       <div className={styles.BlueSection}>
         <div className={styles.SearchContainer}>
-          <h1 className={styles.SearchTitle}>Search x</h1>
+          <h1 className={styles.SearchTitle}>Search</h1>
           <SearchBar className={styles.SearchBar} searchSpotify={searchSpotify}/>
           <Tracklist tracklistData={trackSearchList} addPlaylistTracks={addPlaylistTracks} />
         </div>
       </div>
       <div className={styles.RedSection}>
         <div className={styles.PlaylistContainer}>
-            <h1 className={styles.PlaylistTitle}>Playlist</h1>
+            <h1 className={styles.PlaylistTitle}>Playlist x</h1>
             <PlaylistBar className={styles.PlaylistTitle} saveSpotifyPlaylist={saveSpotifyPlaylist} playlistTracks={playlistTracks} />
             <Playlist playlistData={playlistTracks} removePlaylistTrack={removePlaylistTrack} />  
         </div>    
