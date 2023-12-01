@@ -48,12 +48,25 @@ body, html {
 /* Partie relative aux composants internes à la BlueSection */
 
   .SearchContainer {
-    background-color: #BFE6F5;
+    /* border: 2px solid #3B5DBF; */
     height: 550px;
     width: 60%;
     margin: auto;
     border-radius: 20px;
     display: block;
+    z-index: 2;
+  }
+
+  .SearchContainerBackground {
+    position : absolute;
+    background-color: white;
+    opacity: 0.1;
+    height: 550px;
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 95px;
+    border-radius: 20px;
+    z-index: 1;
   }
 
   .SearchTitle {
@@ -66,12 +79,24 @@ body, html {
 
 
   .PlaylistContainer {
-    background-color: #FFD5C2;
+    opacity: 0.9;
     height: 550px;
     width: 60%;
     margin: auto;
     border-radius: 20px;
     display: block;
+  }
+
+  .PlaylistContainerBackground {
+    position : absolute;
+    background-color: white;
+    opacity: 0.1;
+    height: 550px;
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 95px;
+    border-radius: 20px;
+    z-index: 1;
   }
 
   .PlaylistTitle {

@@ -7,7 +7,7 @@ import styles from '../Tracklist/Tracklist.module.css';
 
 function Playlist(props) {
     return (
-        <div className={styles.TracklistContainer}>
+        <div className={styles.TracklistContainer} style={{ height: '360px' }}>
            {props.playlistData.map((track,index) => <PlaylistTrack trackData={track} key={track.id} index={index} removePlaylistTrack={props.removePlaylistTrack} />)} 
         </div>
     )

@@ -7,6 +7,8 @@ import { getToken, Spotify } from '../../utils/Spotify';
 import PlaylistBar from '../PlaylistBar/PlaylistBar';
 import Playlist from '../Playlist/Playlist';
 import logo from '../../logo.svg';
+import LandingPage from '../LandingPage/LandingPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 const App = () => {
@@ -32,7 +34,7 @@ const App = () => {
 
   // on déclare la fonction qui enlève les tracks de la playlist
   const removePlaylistTrack = (indexToRemove) => {
-    const updatedArray = playlistTracks.filter((_,index) => index !== indexToRemove);
+    const updatedArray = playlistTracks.filter((_, index) => index !== indexToRemove);
     setPlaylistTracks(updatedArray);
   }
 
@@ -42,27 +44,25 @@ const App = () => {
     await Spotify.save(playlistTitle, uriArray);
   };
 
-  
+
 
   return (
     <div className={styles.Container}>
-      <button className={styles.ConnectButton} onClick={getToken}>
-      <img src={logo} className="App-logo" alt="logo" />
-        Connect
-      </button>
       <div className={styles.BlueSection}>
+        <div className={styles.SearchContainerBackground}></div>
         <div className={styles.SearchContainer}>
           <h1 className={styles.SearchTitle}>Search</h1>
-          <SearchBar className={styles.SearchBar} searchSpotify={searchSpotify}/>
+          <SearchBar className={styles.SearchBar} searchSpotify={searchSpotify} />
           <Tracklist tracklistData={trackSearchList} addPlaylistTracks={addPlaylistTracks} />
         </div>
       </div>
       <div className={styles.RedSection}>
+        <div className={styles.PlaylistContainerBackground}></div>
         <div className={styles.PlaylistContainer}>
-            <h1 className={styles.PlaylistTitle}>Playlist</h1>
-            <PlaylistBar className={styles.PlaylistTitle} saveSpotifyPlaylist={saveSpotifyPlaylist} playlistTracks={playlistTracks} />
-            <Playlist playlistData={playlistTracks} removePlaylistTrack={removePlaylistTrack} />  
-        </div>    
+          <h1 className={styles.PlaylistTitle}>Playlist</h1>
+          <PlaylistBar className={styles.PlaylistTitle} saveSpotifyPlaylist={saveSpotifyPlaylist} playlistTracks={playlistTracks} />
+          <Playlist playlistData={playlistTracks} removePlaylistTrack={removePlaylistTrack} />
+        </div>
       </div>
     </div>
   );

@@ -14,12 +14,17 @@ input {
     border: 0px solid white;
     padding: 5px;
     margin: 0;
-    background-color: ;
     font: 13px sans-serif;
     height: 25px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     padding: 5px;
+    background-color: rgba(255, 255, 255, 0.2); /* Couleur blanche avec une opacité de 0.2 */
+    color: ; /* Couleur du texte */
+    border: none; /* Pour enlever la bordure, ajoutez-le selon vos besoins */
+    padding: 10px; /* Ajoutez le rembourrage selon vos besoins */
+
+
     /* border-radius: 12px;*/
 }
 
