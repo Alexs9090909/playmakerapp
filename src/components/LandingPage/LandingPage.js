@@ -13,7 +13,7 @@ const LandingPage = () => {
   return (
     <div className={styles.LandingPage}>
       <div className={styles.TextContent}>
-        <h2>Hello there! 👋 </h2>
+        <h2>Hello therexxx! 👋 </h2>
         <p>Thanks for checking my Portfolio! &#x1F60A; </p>
         <p>Unfortunately <strong>Spotify</strong> has now limited the number of users who can access their API &#x1F611;</p>
         <p>If you want me to add you to the list, just <a href="mailto:alexsutocode@gmail.com">send me an email</a>, and I’ll be happy to do so:</p>
