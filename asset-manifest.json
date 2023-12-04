@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/playmakerapp/static/css/main.04acc882.css",
-    "main.js": "/playmakerapp/static/js/main.3c80c7fe.js",
+    "main.js": "/playmakerapp/static/js/main.c6236bbb.js",
     "static/js/787.ac2289a0.chunk.js": "/playmakerapp/static/js/787.ac2289a0.chunk.js",
     "static/media/logo.svg": "/playmakerapp/static/media/logo.4010961f114aeed1b43d3cc19c4c6100.svg",
     "index.html": "/playmakerapp/index.html",
     "main.04acc882.css.map": "/playmakerapp/static/css/main.04acc882.css.map",
-    "main.3c80c7fe.js.map": "/playmakerapp/static/js/main.3c80c7fe.js.map",
+    "main.c6236bbb.js.map": "/playmakerapp/static/js/main.c6236bbb.js.map",
     "787.ac2289a0.chunk.js.map": "/playmakerapp/static/js/787.ac2289a0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04acc882.css",
-    "static/js/main.3c80c7fe.js"
+    "static/js/main.c6236bbb.js"
   ]
 }
