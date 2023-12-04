@@ -3,15 +3,37 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Manrope', sans-serif;
     background: linear-gradient(to right, #3B5DBF, #FF6933);
   }
   
+  .AppTitle {
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    transform: translate(-50%, -50%);
+    font-family: 'Syne', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
   .PopupWindow {
     position: absolute;
-    margin-left: 26%;
-    margin-top: 5%;
-    z-index: 99;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 999; 
+  }
+  
+  .WhiteLayer {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 10000px;
+    height: 10000px;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
   }
 
   .ConnectButton {
@@ -59,10 +81,12 @@ body, html {
     height: 550px;
     width: 60%;
     margin: auto;
+    margin-top: 110px;
+    margin-left: 30%;
     border-radius: 20px;
     display: block;
     background-color: rgba(255, 255, 255, 0.1);
-    z-index: 2;
+    /* z-index: 2; */
   }
 
   /* .SearchContainerBackground {
@@ -81,7 +105,7 @@ body, html {
   .SearchTitle {
     margin: 5% auto 0 auto;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Syne', sans-serif;
   }
 
 /* Partie relative aux composants internes à la RedSection */
@@ -92,6 +116,8 @@ body, html {
     height: 550px;
     width: 60%;
     margin: auto;
+    margin-top: 110px;
+    margin-left: 10%;
     border-radius: 20px;
     display: block;
     background-color: rgba(255, 255, 255, 0.1);
@@ -112,5 +138,6 @@ body, html {
   .PlaylistTitle {
     margin: 5% auto 0 auto;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
   }

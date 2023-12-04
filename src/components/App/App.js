@@ -49,7 +49,7 @@ const App = () => {
     popupDisplay = 'block';
   }
 
-  if(window.location.hash.length > 1) {
+  if (window.location.hash.length > 1) {
     popupDisplay = 'none'
   }
 
@@ -59,8 +59,12 @@ const App = () => {
 
   return (
     <div className={styles.Container}>
-      <div className={styles.PopupWindow} style={{ display: popupDisplay }}>
-        <LandingPage />
+      <div className={styles.AppTitle}>Playmaker</div>
+      <div className={styles.popupWindowContainer} style={{ display: popupDisplay }}>
+        <div className={styles.PopupWindow}>
+          <LandingPage />
+        </div>
+        <div className={styles.WhiteLayer}></div>
       </div>
       <div className={styles.BlueSection}>
         <div className={styles.SearchContainerBackground}></div>
