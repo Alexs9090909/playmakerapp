@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import styles from './App.module.css';
 import SearchBar from '../SearchBar/SearchBar';
 import Tracklist from '../Tracklist/Tracklist';
-import { getToken, Spotify } from '../../utils/Spotify';
+import { getToken, Spotify, TOKEN } from '../../utils/Spotify';
 import PlaylistBar from '../PlaylistBar/PlaylistBar';
 import Playlist from '../Playlist/Playlist';
 import logo from '../../logo.svg';
@@ -44,10 +44,24 @@ const App = () => {
     await Spotify.save(playlistTitle, uriArray);
   };
 
+  let popupDisplay = 'none';
+  if (TOKEN === null) {
+    popupDisplay = 'block';
+  }
+
+  if(window.location.hash.length > 1) {
+    popupDisplay = 'none'
+  }
+
+  console.log(TOKEN);
+
 
 
   return (
     <div className={styles.Container}>
+      <div className={styles.PopupWindow} style={{ display: popupDisplay }}>
+        <LandingPage />
+      </div>
       <div className={styles.BlueSection}>
         <div className={styles.SearchContainerBackground}></div>
         <div className={styles.SearchContainer}>

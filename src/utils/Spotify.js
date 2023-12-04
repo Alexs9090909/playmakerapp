@@ -1,7 +1,7 @@
 const BASE_URL = 'https://accounts.spotify.com/authorize';
 const RESPONSE_TYPE = '?response_type=token';
 const CLIENT_ID = "&client_id=92b7e448f7fe406eaef359748343fe84";
-const REDIRECT_URL = "&redirect_uri=http://localhost:3000/App";
+const REDIRECT_URL = "&redirect_uri=http://localhost:3000/";
 // const REDIRECT_URL = "&redirect_uri=https://alexs9090909.github.io/playmakerapp/#/App";
 const SCOPE = '&scope=ugc-image-upload user-read-playback-state user-modify-playback-state user-read-currently-playing playlist-modify-public playlist-modify-private playlist-read-private playlist-read-collaborative';
 let TOKEN = null;
@@ -9,7 +9,7 @@ let TOKEN = null;
 /*  let apiKey = "BQCIHk_B6sJGR5f0fhBGM8RI7RzvIWsuCANY6NiKAheSpKsteRPEUTU50kmObhMsHq6xitwlf0_MhjoyZVLnxynTbsnmYF1ewXe4zXdhO9IWo4zp3Z09QiP8xI4awFxC36RdVRU5miChXDanugLoF06-_jI9XoUMu38PVYTDtcjqD14txydNHW_DPG5VLiKgSwo73583W9Zoqv1n7KmRzeXfr2eKeNKsdFHeZXKm3uVNbMq-HHelM6x_3BS6jvQRGhMAHKXV7Q" */ // Access token à renouveler toutes les heures 
 
 const getToken = () => {
-    
+   
     if (TOKEN) {
         return TOKEN;
     } else if (window.location.hash.length > 1) {
@@ -31,8 +31,7 @@ const getToken = () => {
         const URL = BASE_URL + RESPONSE_TYPE + CLIENT_ID + SCOPE + REDIRECT_URL;
         window.location = URL;
     }
-};
- 
+} 
 
 const Spotify = {
     search(term) {
@@ -47,7 +46,6 @@ const Spotify = {
                     Authorization: `Bearer ${apiKey}`
                 },
             }
-
         )
             .then((response) => {
                 return response.json();
@@ -130,7 +128,7 @@ const Spotify = {
 }
 
 
-export { Spotify, getToken };
+export { Spotify, getToken, REDIRECT_URL, TOKEN };
 
 
 

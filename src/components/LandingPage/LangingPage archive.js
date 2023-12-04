@@ -1,18 +1,11 @@
+// LandingPage.js
 import React from 'react';
 import styles from './LandingPage.module.css';
+import { Link } from 'react-router-dom';
 import { getToken } from '../../utils/Spotify';
 import logo from '../../logo.svg';
 
-/* 
-
-  const handleConnectClick = () => {
-    getToken();
-  };
-
-*/
-
 const LandingPage = () => {
-
   const handleConnectClick = () => {
     getToken();
   };
@@ -28,11 +21,12 @@ const LandingPage = () => {
         <p className={styles.Login}>Email: playmakerapp00@gmail.com<br></br>
           Password: Playmaker1234</p>
       </div>
-
+      <Link to="/App">
         <button className={styles.ConnectButton} onClick={handleConnectClick}>
           <img src={logo} className="App-logo" alt="logo" />
           Connect
         </button>
+      </Link>
     </div>
   );
 };

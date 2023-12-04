@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh; /* 100% de la hauteur de la vue */
-  background-color: rgba(255, 255, 255, 0.3); /* Blanc légèrement transparent */
+  background-color: rgba(255, 255, 255, 1); /* Blanc légèrement transparent */
   text-align: center;
   padding: 20px;
   width: 600px; /* Largeur du rectangle blanc */
