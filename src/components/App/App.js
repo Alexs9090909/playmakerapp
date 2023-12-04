@@ -51,7 +51,7 @@ const App = () => {
       <div className={styles.BlueSection}>
         <div className={styles.SearchContainerBackground}></div>
         <div className={styles.SearchContainer}>
-          <h1 className={styles.SearchTitle}>Search xyx</h1>
+          <h1 className={styles.SearchTitle}>Search</h1>
           <SearchBar className={styles.SearchBar} searchSpotify={searchSpotify} />
           <Tracklist tracklistData={trackSearchList} addPlaylistTracks={addPlaylistTracks} />
         </div>
