@@ -1,5 +1,7 @@
 # Playmaker 🎧
 
+![ezgif-1-48c66e1f67](https://github.com/user-attachments/assets/e13bdd69-54ca-42e6-b172-d7694f1311d9)
+
 Playmaker is a Single Page Application (SPA) built with JavaScript, React, HTML, and CSS. It leverages the Spotify API to enable users to create and manage playlists seamlessly.
 
 **You can access the application here:** [https://alexs9090909.github.io/playmakerapp/](https://alexs9090909.github.io/playmakerapp/)
